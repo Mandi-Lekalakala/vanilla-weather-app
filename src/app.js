@@ -17,6 +17,12 @@ function refreshWeather(response) {
   let latitudeValue = response.data.coordinates.latitude;
   let longitude = document.querySelector("#longitude");
   let longitudeValue = response.data.coordinates.longitude;
+  let iconElement = document.querySelector("#weather-icon");
+  let iconValue = `<img
+                src="${response.data.condition.icon_url}"
+                class="weather-app-icon"
+              />`;
+  iconElement.innerHTML = iconValue;
 
   temperatureElement.innerHTML = temperatureValue;
   cityElement.innerHTML = cityValue;
@@ -41,6 +47,10 @@ function formatDate(date) {
     "Saturday",
   ];
   let day = days[date.getDay()];
+
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
 
   if (minutes < 10) {
     minutes = `0${minutes}`;
