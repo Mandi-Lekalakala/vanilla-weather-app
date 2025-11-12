@@ -1,10 +1,52 @@
 function refreshWeather(response) {
   let temperatureElement = document.querySelector("#temperature");
-  let temperature = Math.round(response.data.temperature.current);
-  temperatureElement.innerHTML = temperature;
+  let temperatureValue = Math.round(response.data.temperature.current);
   let cityElement = document.querySelector("#city");
   let cityValue = response.data.city;
+  let descriptionElement = document.querySelector("#description");
+  let descriptionValue = response.data.condition.description;
+  let humidityElement = document.querySelector("#humidity");
+  let humidityValue = `${response.data.temperature.humidity}%`;
+  let temperatureFeeling = document.querySelector("#temperature-feeling");
+  let feelingValue = `${Math.round(response.data.temperature.feels_like)}°C`;
+  let windSpeed = document.querySelector("#wind-speed");
+  let windSpeedValue = `${response.data.wind.speed}km/h`;
+  let timeElement = document.querySelector("#time");
+  let date = new Date(response.data.time * 1000);
+  let latitude = document.querySelector("#latitude");
+  let latitudeValue = response.data.coordinates.latitude;
+  let longitude = document.querySelector("#longitude");
+  let longitudeValue = response.data.coordinates.longitude;
+
+  temperatureElement.innerHTML = temperatureValue;
   cityElement.innerHTML = cityValue;
+  descriptionElement.innerHTML = descriptionValue;
+  humidityElement.innerHTML = humidityValue;
+  temperatureFeeling.innerHTML = feelingValue;
+  windSpeed.innerHTML = windSpeedValue;
+  timeElement.innerHTML = formatDate(date);
+  latitude.innerHTML = latitudeValue;
+  longitude.innerHTML = longitudeValue;
+}
+function formatDate(date) {
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
+  let days = [
+    "sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  return `${day} ${hours}:${minutes}`;
 }
 
 function searchCity(city) {
