@@ -22,7 +22,6 @@ function refreshWeather(response) {
                 src="${response.data.condition.icon_url}"
                 class="weather-app-icon"
               />`;
-  iconElement.innerHTML = iconValue;
 
   temperatureElement.innerHTML = temperatureValue;
   cityElement.innerHTML = cityValue;
@@ -33,6 +32,7 @@ function refreshWeather(response) {
   timeElement.innerHTML = formatDate(date);
   latitude.innerHTML = latitudeValue;
   longitude.innerHTML = longitudeValue;
+  iconElement.innerHTML = iconValue;
 }
 function formatDate(date) {
   let minutes = date.getMinutes();
