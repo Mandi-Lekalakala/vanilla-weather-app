@@ -33,6 +33,8 @@ function refreshWeather(response) {
   latitude.innerHTML = latitudeValue;
   longitude.innerHTML = longitudeValue;
   iconElement.innerHTML = iconValue;
+
+  getForecast(response.data.city);
 }
 function formatDate(date) {
   let minutes = date.getMinutes();
@@ -72,7 +74,16 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "cfabea60f0eoe0t3bb3e16a70e85e14b";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+  console.log(apiUrl);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
 
   let forecastHtml = "";
@@ -98,4 +109,3 @@ function displayForecast() {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 searchCity("Polokwane");
-displayForecast();
