@@ -5,14 +5,16 @@
 This is a weather application built using vanilla JavaScript, HTML, and CSS. The app allows users to search for a city and view real-time weather information retrieved from an external API, including current conditions and forecasts.
 The project focuses on JavaScript fundamentals, API integration, asynchronous data handling, and dynamic updates to the user interface.
 </P>
-🛠️ Technologies Used:
+<div>
+<span>🛠️Technologies Used:</span>
 <ul>
 <li>HTML/CSS</li>
 <li>JavaScript (Vanilla)</li>
 <li>External Weather API</li>
 </ul>
-<div>
-✨ Key Features:
+<span>
+✨Key Features: 
+</span>
 <ul>
 <li>Search weather data by city name</li>
 <li>Displays current temperature and weather conditions</li>
@@ -23,8 +25,7 @@ The project focuses on JavaScript fundamentals, API integration, asynchronous da
 <li>Asynchronous API calls using fetch / async-await</li>
 <li>Responsive, user-friendly interface</li>
 </ul>
-</div>
-🧠 What I Learned:
+<span>🧠What I Learned:</span>
 <ul>
 <li>Integrating and working with external APIs</li>
 <li>Handling asynchronous JavaScript logic</li>
@@ -32,6 +33,7 @@ The project focuses on JavaScript fundamentals, API integration, asynchronous da
 <li>Structuring JavaScript for clarity and maintainability</li>
 <li>Debugging API responses and user input errors</li>
 </ul>
+ </div>
 <div>
   🚀 Live Demo
 👉 https://my-vanilla-weatherapp.netlify.app/
