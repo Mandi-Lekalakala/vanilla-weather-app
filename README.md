@@ -31,18 +31,21 @@ The project focuses on JavaScript fundamentals, API integration, asynchronous da
 <li>Structuring JavaScript for clarity and maintainability</li>
 <li>Debugging API responses and user input errors</li>
 </ul>
-🚀 Live Demo
+<div>
+  🚀 Live Demo
 👉 https://my-vanilla-weatherapp.netlify.app/
-
+</div>
 </br>
 
 📌 Notes:
 </br>
 This project was built to strengthen front-end development skills and demonstrate practical use of JavaScript, APIs, and responsive UI design.
 </br>
+<div>
 📸 Project Preview
 <p align="center">
   <img src="images/myvanillaweatherapp.png" width="30%" />
   <img src="images/cape-town-search.png" width="30%" />
   <img src="images/mbombela-search.png" width="30%" />
 </p>
+</div>
