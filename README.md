@@ -1,19 +1,19 @@
 <h2>🌦️ Weather App (Vanilla JavaScript)</h2>
 <p>
-📖 Project Overview:
+Project Overview:
 </br>
 This is a weather application built using vanilla JavaScript, HTML, and CSS. The app allows users to search for a city and view real-time weather information retrieved from an external API, including current conditions and forecasts.
 The project focuses on JavaScript fundamentals, API integration, asynchronous data handling, and dynamic updates to the user interface.
 </P>
 <div>
-<span>🛠️Technologies Used:</span>
+<span>Technologies Used:</span>
 <ul>
 <li>HTML/CSS</li>
 <li>JavaScript (Vanilla)</li>
 <li>External Weather API</li>
 </ul>
 <span>
-✨Key Features: 
+Key Features: 
 </span>
 <ul>
 <li>Search weather data by city name</li>
@@ -25,7 +25,7 @@ The project focuses on JavaScript fundamentals, API integration, asynchronous da
 <li>Asynchronous API calls using fetch / async-await</li>
 <li>Responsive, user-friendly interface</li>
 </ul>
-<span>🧠What I Learned:</span>
+<span>What I Learned:</span>
 <ul>
 <li>Integrating and working with external APIs</li>
 <li>Handling asynchronous JavaScript logic</li>
