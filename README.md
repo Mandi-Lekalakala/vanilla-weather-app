@@ -1,4 +1,4 @@
-<h2>🌦️ Weather App (Vanilla JavaScript)</h2>
+<h2>Weather App (Vanilla JavaScript)</h2>
 <p>
 Project Overview:
 </br>
@@ -35,21 +35,7 @@ Key Features:
 </ul>
  </div>
 <div>
-  🚀 Live Demo
-👉 https://my-vanilla-weatherapp.netlify.app/
-</div>
-</br>
-<div>
-📌 Notes:
+Notes:
 </br>
 This project was built to strengthen front-end development skills and demonstrate practical use of JavaScript, APIs, and responsive UI design.
   </div>
-</br>
-<div>
-<p>📸 Project Preview</p>
-<p align="center">
-  <img src="images/myvanillaweatherapp.png" width="30%" />
-  <img src="images/cape-town-search.png" width="30%" />
-  <img src="images/mbombela-search.png" width="30%" />
-</p>
-</div>
